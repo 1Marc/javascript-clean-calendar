@@ -1,0 +1,105 @@
+/* calendar style */
+#calendarDiv table, #calendarDiv th, #calendarDiv td, #calendarDiv, #calendarDiv a {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 12px;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+div#calendarDiv {
+	display: block;
+	display: none;
+	position: relative;
+	border: 1px solid #777;
+}
+div#calendarDiv a {
+	cursor: pointer;
+	cursor: hand;
+	color: #000;
+}
+table#calendar {
+	background: #ddd;
+	clear: both;
+	text-align: center;
+	font-size: 105%;
+}
+table#calendar, #linksTable {
+	width: 180px;
+}
+table#calendar .calendarHeader {
+	background: #0F0A0A url(../../img/fadeto333.gif) top repeat-x;
+	border-bottom: 1px solid #444;
+	color: #fff;
+}
+table#calendar tr.weekDaysTitleRow td {
+	background: #777;
+	color: #fff;
+}
+table#calendar tr.weekDaysRow {
+	background: #eee;
+	color: #666;
+}
+table#calendar td.weekDaysCell {
+	color: #000;
+	border: 1px solid #ddd;
+}
+table#calendar td.weekDaysCellOver {
+	background: #fff;
+	border: 1px solid #777;
+}
+a#closeCalender {
+	position: absolute;
+	right: 0;
+	bottom: 100%;
+	margin-bottom: 1px;
+	display: block;
+	padding: 2px;
+	cursor: pointer;
+	cursor: hand;
+	font-size: 60%;
+	letter-spacing: 1px;
+}
+a#closeCalender:hover {
+	background: #000;
+	color: #fff;
+}
+div#calendarDiv table#linksTable td {
+	background: #000;
+}
+table#linksTable a {
+	display: block;
+	color: #fff;
+	letter-spacing: 1px;
+	font-weight: bold;
+	font-size: 80%;
+	padding: 2px 5px;
+}
+table#linksTable a:hover {
+	background: #ddd;
+	color: #333;
+}
+a#prevMonth {
+	float: left;
+}
+a#nextMonth {
+	float: right;
+}
+td#today {
+	background: #999;
+}
+#calendar_cover {
+    display: none; /*sorry for IE5*/
+    display/**/: block; /*sorry for IE5*/
+    position: absolute; /*must have*/
+    z-index: -1; /*must have*/
+    filter: mask(); /*must have*/
+    top: -4px; /*must have*/
+    left: -4px; /*must have*/
+    width: 193px; /*must have to match width and borders*/
+    height: 200px; /*must have to match maximum height*/ 
+}
