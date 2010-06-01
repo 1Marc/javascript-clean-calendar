@@ -1,0 +1,2 @@
+1. add div somewhere on page <div id="calendarDiv"></div>
+2. add class="calendarSelectDate" to any text inputs you want the calendar to pop up on
